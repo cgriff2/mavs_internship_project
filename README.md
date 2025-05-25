@@ -1,12 +1,30 @@
-# React + Vite
+# 🏀 Mavericks Draft Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Mavericks Draft Hub** is a React-based web app that allows scouts and decision-makers to view, compare, and analyze NBA draft prospects. Built with React, React Router, and Material UI, this app features an interactive Big Board and detailed player profiles with stats, measurements, and scouting report functionality.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Big Board**
+  - Displays a list of players sorted by average scout ranking
+  - Each card links to a detailed player profile
 
-## Expanding the ESLint configuration
+- **Player Profile**
+  - Shows player bio, measurements, and photo
+  - Toggle between per-game and total stats
+  - Displays individual scout rankings with color-coded indicators
+  - Input form to add new scouting reports (stored in component state)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **Frontend:** React, Vite
+- **Routing:** React Router
+- **Styling & UI:** Material UI (MUI)
+- **Data:** Static JSON (`draftDataWrapper.js`)
+
+## 🧪 Functionality Criteria Checklist
+
+✅ **Dynamic Input:**  
+Toggle between per-game and total stats on the player profile page.
+
+✅ **Form Submission with State:**  
+Add a new scouting report using the form — updates local state and re-renders without persistence.
